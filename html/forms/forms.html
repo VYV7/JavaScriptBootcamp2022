@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<body>
+	<h1>Forms</h1>
+
+	<form action="/test">
+		<!-- the action attribute defines where the form is submitted -->
+		<p>
+			<labeL for="username">Enter a username</labeL>
+			<input id="username" type="text" placeholder="username" name="username">
+		</p>
+
+		<p>
+			<label for="password">Enter the password</label>
+			<input id="password" type="password" placeholder="password" name="password">
+		</p>
+		
+		<p>
+			<label for="color">Select a color</label>
+			<input id="color" type="color" name="color">
+		</p>
+		
+		<!-- another way of associating a lable with an input element -->
+		<p>
+			<label>Select a number
+				<input id="number" type="number" placeholder="enter a number" name="number"
+				min="0" max="1000" step="5">
+			</label>
+		</p>
+
+		<!--by default button in a form is a submit button-->
+		<button>Submit</button>
+		<!--use type attribute to change it into a regular button-->
+		<button type="button">not Submit</button>
+		<!--another way of creating a submit button-->
+		<input type="submit">
+		<input type="submit" value="My Text">
+	</form>
+
+	<hr>
+
+	<h2>Hijacking Searches</h2>
+
+	<h3>Reddit</h3>
+	<form action="https://www.reddit.com/search">
+		<p>
+			<input type="text" name="q">
+			<button>Search Reddit</button>
+		</p>
+	</form>
+
+	<h3>Google</h3>
+	<form action="https://www.google.co.uk/search">
+		<p>
+			<input type="text" name="q">
+			<button>Search Google</button>
+		</p>
+	</form>
+
+	<h3>YouTube</h3>
+	<form action="https://www.youtube.co.uk/results">
+		<p>
+			<input type="text" name="search_query">
+			<button>Search YouTube</button>
+		</p>
+	</form>
+
+	<hr>
+
+	<h2>More Inputs</h2>
+
+	<form action="/to_the_server">
+		<p>
+			<label for="agree">I agree to everything</label>
+			<input type="checkbox" name="agree" id="agree" checked>
+		</p>
+		<p>
+			<label for="sizeS">S</label>
+			<input type="radio" name="size" id="sizeS" value="s">
+
+			<label for="sizeS">M</label>
+			<input type="radio" name="size" id="sizeM" value="m">
+
+			<label for="sizeS">L</label>
+			<input type="radio" name="size" id="sizeL" value="l">
+			<!--selecting a radio button asignes its value to the name-->
+		</p>
+		<p>
+			<label for="meat">Select Meat</label>
+			<select name="meat" id="meat">
+				<option value="none">-- Choose an option</option>
+				<option value="beef">Beef</option>
+				<option value="pork" selected>Pork</option>
+				<option value="chicken">Chicken</option>
+			</select>
+		</p>
+		<p>
+			<label for="age">Amount of Cheese</label>
+			<input type="range" id="cheese" name="cheese" min="0" max="15" value="5">
+		</p>
+		<p>
+			<label for="text">Any special requests?</label>
+			<br>
+			<textarea name="requests" id="requests" cols="30" rows="5" 
+			placeholder="type here"></textarea>
+			<!--this is not an input element-->
+		</p>
+
+		<button>Submit</button>
+	</form>
+
+	<hr>
+
+	<h2>Validation</h2>
+
+	<form action="/test">
+		<p>
+			<label for="fName">First Name</label>
+			<input type="text" name="fName" id="fName" required>
+		</p>
+		<p>
+			<label for="username">Username</label>
+			<input type="text" name="username" id="username" 
+				minlength="4" maxlength="8" required>
+		</p>
+		<p>
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email" required>
+		</p>
+		<p>
+			<label for="url">URL</label>
+			<input type="url" name="url" id="url" required>
+
+		</p>
+
+		<button>Submit</button>
+	</form>
+	
+
+
+
+
+	<!--hitting Enter also submits the form even if button does not exist-->
+
+
+	<!--example url-->
+	<!-- file:///test?username=peter&password=1234&color=%23982a2a&number=777 -->
+	<!--data is in url because this is git request-->
+
+</body>
+</html>
