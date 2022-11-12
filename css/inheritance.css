@@ -1,0 +1,24 @@
+body {
+	color: brown;
+	background-color: black;
+}
+
+/* some elements in body will inherit the above color unless 
+you change it directly for a given element */
+
+section {
+	color: green;
+}
+
+form {
+	color: yellow;
+}
+
+/* you can make elements inherit properties using the 
+inherit value for these properties */
+button {
+	color: inherit;
+	background-color:blueviolet;
+}
+
+

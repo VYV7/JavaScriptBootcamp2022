@@ -1,0 +1,33 @@
+body {
+	background-color: black;
+	color: green;
+}
+
+#animated1 {
+	animation-duration: 10s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+/* this does the same thing
+p {
+	animation: 3s infinite alternate slidein;
+  }
+  */
+
+  @keyframes slidein{
+	0% {
+		transform: translateX(20%);
+	}
+	40% {
+		transform: translateX(45%);
+		color: orange;
+	}	
+	60% {
+		transform: translateX(55%);
+		color: orange;
+	}
+	100% {
+		transform: translateX(80%);
+	}
+  }

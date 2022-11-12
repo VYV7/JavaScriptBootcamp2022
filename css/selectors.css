@@ -1,0 +1,101 @@
+/* https://coolors.co/ */
+
+/* * {
+	background-color: cyan;
+} */
+
+body {
+	background-color: #F1FAEE
+}
+
+button {
+	font-size: 30px;
+	background-color: #A8DADC
+}
+
+h1, h2 {
+	color: #1D3557;
+}
+
+/* ID selector */
+#signup {
+	background-color: #1D3557;
+	color: #F1FAEE
+}
+
+span {
+	color: #457B9D
+}
+
+/* class selector */
+.tag {
+	background-color: #E63956;
+	color: #F1FAEE;
+	font-size: 16px
+}
+/* descendant selector */
+.post a {
+	color: #457B9D;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+footer a {
+	color: #E63956;
+}
+
+/* adjacent sibling combinator */
+input + button {
+	background-color: aqua; 
+}
+
+/* child combinator */
+footer > a {
+	color: grey;
+}
+
+/* attribute selector */
+input[type="password"] {
+	color: brown;
+}
+
+section[class="post"] {
+	background-color: lightblue;
+}
+/* section.post does the same */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+
+/* pseudo class */
+/* button:hover describes the behaviour that triggers the style */
+.post button:hover {
+	background-color:#E63956;
+	color:#A8DADC
+}
+.post button:active {
+	background-color:#9d2539;
+	color:#7ba0a2
+}
+
+.post a:hover {
+	text-decoration: underline;
+}
+
+.post:nth-of-type(2n) {
+	background-color: rgb(143, 184, 198);
+}
+
+/* pseudo element */
+h2::first-letter {
+	font-size: 50px;
+}
+
+::selection {
+	background-color: yellow;
+}
+
+/* specificity
+this line has no effect because it is less specific than 
+.post button:hover above */
+button:hover {
+	background-color: olive;
+}

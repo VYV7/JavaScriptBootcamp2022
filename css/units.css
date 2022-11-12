@@ -1,0 +1,76 @@
+body {
+	background-color: black;
+	color: green;
+}
+
+section {
+	background-color: green;
+	width: 400px;
+	height: 200px;
+}
+
+div {
+	background-color: greenyellow;
+	width: 50%;				/* 50% of the section element */
+	height: 50%;
+}
+
+h1 {
+	color: green;
+	font-size: 40px;
+	border: 1px solid green;
+	line-height: 200%;		/* with reference to the font height */
+}
+
+#ems h2 {
+	font-size: 2em;			/* 2x parent (article) font size */
+}
+
+#ems h3 {
+	font-size: 1.5em;
+	margin-left: 1em;
+	border: 1px solid green;
+}
+
+article {
+	font-size: 18px;
+}
+
+/* this makes the element scale relative to the font of the parent element */
+#ems button {
+	font-size: 1em;			/* 1x of the article font size */
+	padding: 0 1em;			/* R/L padding 1x of the article size */
+	border-radius: 0.5em;
+}
+
+/* em stack up in lists */
+#ems ul {
+	font-size: .75em;
+}
+
+
+/*  RAMS - relative to <html> font size */
+html {
+	font-size: 10px;
+}
+
+#rems h2 {
+	font-size: 2rem;			/* 2x parent (article) font size */
+}
+
+#rems h3 {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	border: 1px solid green;
+}
+
+#rems button {
+	font-size: 1rem;			/* 1x of the article font size */
+	padding: 0 1rem;			/* R/L padding 1x of the article size */
+	border-radius: 0.5rem;
+}
+
+/* em stack up in lists */
+#rems ul {
+	font-size: .75rem;
+}

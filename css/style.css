@@ -1,0 +1,14 @@
+h3 {
+	color: blue;
+	background-color: gray;;
+}
+
+button {
+	color: brown;		/* text color */
+	background-color: violet;
+}
+
+p {
+	color: olive;
+	background-color: bisque;
+}

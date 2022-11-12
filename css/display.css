@@ -1,0 +1,55 @@
+body {
+	background-color: black;
+	color: green;
+}
+
+/* by default h1 is a block element but it can be changed with
+ the display: inline property */
+h1 {
+	background-color: rgb(84, 66, 17);
+	border: 1px solid grey;
+	display: inline;
+}
+
+/* by default span is an inline element but it can be changed with
+ the display: block property */
+.spanblock {
+	background-color:rgb(64, 49, 8);
+	border: 1px solid orange;
+	display: block;
+}
+
+.spantest {
+	background-color: rgb(44, 38, 38);
+	border: 1px solid white;
+	font-weight: bold;
+
+	padding: 20px;	/* padding is respected */
+	margin: 40px;	/* margin is only respected on left and right */
+}
+
+/* by default div is a block element */
+div {
+	background-color:rgb(71, 36, 36);
+	border: 1px solid orange;
+
+}
+
+/* you can make it an inline element with display: inline
+but it will then behave as an inline element and some properties
+will be ignored unless you use display: inline-block */
+.divinline {
+	background-color:rgb(44, 38, 38);
+	border: 1px solid orange;
+	display: inline-block;
+	padding: 20px;
+	margin: 20px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+/* hide elements with display: none */
+#hide {
+	/* display: none;	 */
+}
