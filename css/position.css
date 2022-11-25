@@ -1,0 +1,41 @@
+body {
+	background-color: black;
+	color: green;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border: 2px solid greenyellow;
+	margin: 10;
+	display: inline-block;
+}
+
+#middle {
+	background-color: blueviolet;
+}
+
+#static #middle {
+	position: static;
+	top: 30px;			/* this will not work with static */
+	left: 10px;
+}
+#relative #middle {
+	position: relative;
+	top: 30px;			/* relative to its original position, its place is reserved */
+	left: 10px;
+}
+/* section {
+	position: relative;
+} */
+#absolut #middle {
+	position: absolute;
+	top: 60px;			/* relative to its positioned ancestor or body, removed from flow */
+	left: 80px;
+}
+#fixed #middle {
+	position: fixed;
+	top: 60px;			/* relative to the viewport, removed from doc flow */
+	left: 300px
+}

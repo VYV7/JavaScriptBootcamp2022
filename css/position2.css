@@ -1,0 +1,32 @@
+body {
+	background-color: black;
+	color: green;
+}
+
+footer {
+	position: absolute;
+	top: 750px;
+}
+
+section {
+	background-color: green;
+	width: 300px;
+	height: 200px;
+
+	/* position: relative; */
+}
+
+/* absolute - relative to positioned ancestor */
+#div1 {
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+	top: 50px;
+	left: 50px;
+	/* position: static; */
+	/* position: relative; */
+	/* position: absolute;			 */
+	/* position: fixed; */
+	position: sticky;
+
+}
