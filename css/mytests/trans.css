@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+	color: green;
+
+}
+
+h1 {
+	width: 25%;
+	animation-duration: 3s;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		color: red;
+	}
+	100% {
+		transform: rotate(360deg);
+		color: green;
+	}
+}

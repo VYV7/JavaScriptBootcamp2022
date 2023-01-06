@@ -59,6 +59,13 @@ input[type="password"] {
 	color: brown;
 }
 
+a[href*="con"] {	/* all a tags whose href contains "con" */
+	color: pink;
+}
+a[href$="me"] {	/* all a tags whose href ends with "me" */
+	color: lightblue;
+}
+
 section[class="post"] {
 	background-color: lightblue;
 }
